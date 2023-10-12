@@ -1,0 +1,11 @@
+.screenshotContainer{
+    height:35rem;
+    padding:1.5rem;
+    border-radius: 2rem;
+    box-shadow: 1px 0.2px 12px #afafaf;
+}
+.screenshotContainer img{
+    border:1px solid;
+    height:100%;
+    border-radius: 1.5rem;
+}

@@ -1,0 +1,36 @@
+.footerDiv {
+    padding: 1rem !important;
+    background: black;
+}
+
+#footerImg:hover {
+    animation: scaleup(0.2s);
+    transform: scale(2.8);
+    transition: ease 0.4s all;
+}
+
+.footerIcons {
+    border-radius: 50%;
+    color: grey;
+    margin: 0 0 0 2.5rem;
+    transform: scale(1.4);
+    cursor: pointer;
+}
+.footerIcons:hover {
+    color: white;
+}
+
+@media only screen and (max-width : 600px) {
+    .footerDiv {
+        padding: 0 !important;
+    }
+
+    #footerLogo {
+        text-align: center !important;
+    }
+
+    #footerIcons {
+        text-align: center !important;
+        display: block !important;
+    }
+}

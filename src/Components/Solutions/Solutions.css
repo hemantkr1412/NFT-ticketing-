@@ -1,0 +1,55 @@
+.solutionCardsDiv {
+  height: 25rem;
+}
+
+.flip-card {
+  height: 100%;
+  width: 100%;
+  margin: 0rem;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front,
+.flip-card-back {
+  flex-direction: column;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  backface-visibility: hidden;
+}
+
+.imgDiv {
+  height: 100%;
+}
+
+.imgDiv img {
+  height: 100%;
+  width: 100%;
+}
+
+.flip-card-back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:1rem;
+  color: var(--secondary);
+  transform: rotateY(180deg);
+  overflow: hidden;
+  box-shadow: 1px 0.2px 12px #afafaf;
+  border-radius: 6px;
+}
