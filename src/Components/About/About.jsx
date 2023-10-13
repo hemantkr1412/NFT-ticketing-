@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import image1 from './assets/abc2.png'
 import ss from './assets/ss.webp'
 import ss2 from './assets/ss2.webp'
-import frame from './assets/frame3.png'
+import frame from './assets/frame.png'
 import "./About.css";
 
 const About = () => {
@@ -60,11 +60,15 @@ const About = () => {
 
 			{/* Increase Fan Engagement */}
 
-			<Grid container sx={{ height: '50rem', mt: 5, backgroundColor: '#3E6C90', p: 2 }}>
+			<Grid container sx={{
+				height: '50rem',
+				marginTop: '4rem',
+				backgroundColor: '#3E6C90', p: 2
+			}}>
 				<Grid item xs={7} sx={{
 					background: 'white',
-					borderTopLeftRadius:'1rem',
-					borderBottomLeftRadius:'1rem'
+					borderTopLeftRadius: '1rem',
+					borderBottomLeftRadius: '1rem'
 				}}>
 					<Typography variant="h3" gutterBottom sx={{
 						textAlign: 'center',
@@ -157,15 +161,16 @@ const About = () => {
 					alignItems: 'center',
 					justifyContent: "space-evenly",
 					// textTransform:'capitalize'
+					color: '#3E6C90'
 				}}
 				justifyContent="center">
 				<Grid item sx={{
-					border: '2px solid red',
+					// border: '2px solid red',
 					textAlign: "center"
 				}}>
 					<img src={frame} alt="" style={{
-						border: '1px solid',
-						height: '30rem',
+						// border: '1px solid',
+						height: '25rem',
 						marginBottom: '2rem'
 					}} />
 					<Typography variant="body1" gutterBottom sx={{ fontWeight: 'bold' }}>
@@ -176,12 +181,12 @@ const About = () => {
 					</Typography>
 				</Grid>
 				<Grid item sx={{
-					border: '2px solid red',
+					// border: '2px solid red',
 					textAlign: "center"
 				}}>
 					<img src={frame} alt="" style={{
-						border: '1px solid',
-						height: '30rem',
+						// border: '1px solid',
+						height: '25rem',
 						marginBottom: '2rem'
 					}} />
 					<Typography variant="body1" gutterBottom sx={{ fontWeight: 'bold' }}>
@@ -192,12 +197,12 @@ const About = () => {
 					</Typography>
 				</Grid>
 				<Grid item sx={{
-					border: '2px solid red',
+					// border: '2px solid red',
 					textAlign: "center"
 				}}>
 					<img src={frame} alt="" style={{
-						border: '1px solid',
-						height: '30rem',
+						// border: '1px solid',
+						height: '25rem',
 						marginBottom: '2rem'
 					}} />
 					<Typography variant="body1" gutterBottom sx={{ fontWeight: 'bold' }}>
