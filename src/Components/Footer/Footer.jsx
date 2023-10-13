@@ -19,20 +19,15 @@ const Footer = () => {
 						src={logo}
 						alt=""
 						style={{
-							height: "4rem",
+							height: "2rem",
 							marginTop: ".5rem",
-							marginLeft:'5rem',
-							transform:'scale(2.5)'
+							marginLeft: '5rem',
+							transform: 'scale(2.5)'
 						}}
 						id="footerImg"
 					/>
 				</Grid>
-				<Grid
-					item
-					xs={12}
-					sm={5}
-					md={4}
-					lg={3}
+				<Grid item xs={12} sm={5} md={4} lg={3}
 					sx={{
 						display: "flex",
 						alignItems: "center",
@@ -40,13 +35,7 @@ const Footer = () => {
 					}}
 					id="footerIcons">
 					<Box>
-						<InstagramIcon
-							sx={{
-								color: "grey",
-								transform: "scale(1.4)",
-								cursor: "pointer",
-							}}
-						/>
+						<InstagramIcon className="footerIcons" />
 						<TwitterIcon className="footerIcons" />
 						<LinkedInIcon className="footerIcons" />
 						<TelegramIcon className="footerIcons" />

@@ -26,7 +26,7 @@ const Home = () => {
 				}}
 				id="homeContainer">
 				<Grid item xs={1}></Grid>
-				<Grid item xs={6} sx={{
+				<Grid item xs={12} sm={8} md={6} sx={{
 					display: 'flex',
 					flexDirection: 'column',
 					gap: '1rem',
@@ -34,10 +34,13 @@ const Home = () => {
 					color: 'white'
 				}}>
 					<Typography variant="h2" gutterBottom>
-						NFT Ticketing & Collectibles for live events
+						Fan Engagement and
+						Gamification through
+						NFT Ticketing & Collectibles
+
 					</Typography>
 					<Typography variant="h6" gutterBottom>
-						Our self-service platform enables each event organizer to manage the ticketing lifecycle at any time on its own
+						Tap into your audience's needs and create new economic,emotional, and loyalty value
 					</Typography>
 					{/* <Button variant="contained" className="homeBtn"
 						sx={{

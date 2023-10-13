@@ -16,6 +16,7 @@
     transform: scale(1.4);
     cursor: pointer;
 }
+
 .footerIcons:hover {
     color: white;
 }
@@ -27,6 +28,11 @@
 
     #footerLogo {
         text-align: center !important;
+    }
+
+    #footerImg {
+        margin-left: 0 !important;
+        margin-bottom: 1rem;
     }
 
     #footerIcons {

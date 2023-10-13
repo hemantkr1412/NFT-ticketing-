@@ -40,8 +40,8 @@ export default function Navbar() {
 			<Typography variant="h6" sx={{ my: 2 }}>
 				<img src={logo} alt=""
 					style={{
-						height: "5rem",
-						marginTop: ".5rem",
+						height: "2rem",
+						marginTop: "1.5rem",
 					}}
 				/>
 			</Typography>
@@ -115,9 +115,9 @@ export default function Navbar() {
 										src={logo}
 										alt=""
 										style={{
-											height: "4rem",
-											transform:'scale(2)',
-											marginTop: ".5rem",
+											height: "2rem",
+											transform:'scale(1.8)',
+											marginTop: "0.5rem",
 										}}
 										id="navbarLogo"
 									/>
