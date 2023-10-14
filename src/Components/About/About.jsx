@@ -7,7 +7,9 @@ import Typography from '@mui/material/Typography';
 import image1 from './assets/abc2.png'
 import ss from './assets/ss.webp'
 import ss2 from './assets/ss2.webp'
-import frame from './assets/frame.png'
+import frame from './assets/newframe1.png';
+import frame2 from './assets/NewFrame2.png';
+import frame3 from './assets/NewFrame3.png';
 import "./About.css";
 
 const About = () => {
@@ -15,8 +17,7 @@ const About = () => {
 		<div style={{ padding: "1rem 0 4rem" }}>
 			<div id="about"></div>
 			<div className="aboutDiv">
-				<h1 style={{ width: '50%', textAlign: 'center' }}>Revolutionise your ticketing with NFTs
-					- Sell on NFT Ticketing Today!</h1>
+				<h1 style={{ width: '50%', textAlign: 'center' }}>Revolutionise your ticketing with NFTs</h1>
 				<Typography variant="body1" gutterBottom sx={{
 					marginBottom: "3rem",
 					marginTop: "1rem",
@@ -168,11 +169,14 @@ const About = () => {
 					// border: '2px solid red',
 					textAlign: "center"
 				}}>
+					
 					<img src={frame} alt="" style={{
 						// border: '1px solid',
-						height: '25rem',
+						height: '35rem',
 						marginBottom: '2rem'
 					}} />
+					
+					
 					<Typography variant="body1" gutterBottom sx={{ fontWeight: 'bold' }}>
 						ECONOMIC VALUE
 					</Typography>
@@ -184,9 +188,9 @@ const About = () => {
 					// border: '2px solid red',
 					textAlign: "center"
 				}}>
-					<img src={frame} alt="" style={{
+					<img src={frame2} alt="" style={{
 						// border: '1px solid',
-						height: '25rem',
+						height: '35rem',
 						marginBottom: '2rem'
 					}} />
 					<Typography variant="body1" gutterBottom sx={{ fontWeight: 'bold' }}>
@@ -200,9 +204,9 @@ const About = () => {
 					// border: '2px solid red',
 					textAlign: "center"
 				}}>
-					<img src={frame} alt="" style={{
+					<img src={frame3} alt="" style={{
 						// border: '1px solid',
-						height: '25rem',
+						height: '35rem',
 						marginBottom: '2rem'
 					}} />
 					<Typography variant="body1" gutterBottom sx={{ fontWeight: 'bold' }}>

@@ -123,14 +123,13 @@ const Contact = () => {
 							<a
 								href="mailto: hello@beimagine.tech"
 								className="contactLink">
-								hello@beimagine.tech
+								 sales@abaadalkhayal.com
 							</a>
 						</Box>
 						<Box sx={{ mt: 4 }}>
 							<p>Address</p>
 							<p className="contactInfo">
-								B-8  First Floor, Multan Nagar Paschim Vihar Delhi,
-								North West DL-110063
+								Riyadh 2955, Kingdom of Saudi Arabia
 							</p>
 						</Box>
 					</Box>

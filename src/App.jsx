@@ -5,7 +5,7 @@ import About from './Components/About/About.jsx';
 import Solutions from './Components/Solutions/Solutions.jsx';
 import Contact from './Components/Contact/Contact.jsx';
 import Footer from './Components/Footer/Footer.jsx';
-
+import FlowChart from './Components/FlowChart/FlowChart.jsx';
 import './App.css';
 
 function App() {
@@ -15,6 +15,7 @@ function App() {
       <Home/>
       <About/>
       <Solutions/>
+      <FlowChart/>
       <Contact/>
       <Footer/>
     </>
