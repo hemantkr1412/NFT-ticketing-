@@ -1,8 +1,7 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
-import logo from "/logo2.png";
+import logoWhite from "/logo-white.png";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -16,7 +15,7 @@ const Footer = () => {
 				<Grid item xs={1}></Grid>
 				<Grid item xs={12} sm={5} md={6} lg={6} id="footerLogo">
 					<img
-						src={logo}
+						src={logoWhite}
 						alt=""
 						style={{
 							height: "2rem",

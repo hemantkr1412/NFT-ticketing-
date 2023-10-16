@@ -1,9 +1,6 @@
 import React from "react";
-import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import Button from '@mui/material/Button';
-import { Link } from "react-router-dom";
 import "./Home.css";
 
 const Home = () => {
@@ -25,15 +22,21 @@ const Home = () => {
 					alignItems: "center",
 				}}
 				id="homeContainer">
-				<Grid item xs={1}></Grid>
-				<Grid item xs={12} sm={8} md={6} sx={{
+				<Grid item md={1}></Grid>
+				<Grid item sm={12} md={9} lg={6} sx={{
 					display: 'flex',
 					flexDirection: 'column',
 					gap: '1rem',
 					p: 2,
-					color: 'white'
+					color: 'white',
+					textAlign:{xs:'center',md:'unset'}
 				}}>
-					<Typography variant="h2" gutterBottom>
+					<Typography variant="h2" gutterBottom sx={{
+						fontSize: {
+							xs: '2rem',
+							sm: '3rem',
+						}
+					}}>
 						Fan Engagement and
 						Gamification through
 						NFT Ticketing & Collectibles
@@ -42,18 +45,9 @@ const Home = () => {
 					<Typography variant="h6" gutterBottom>
 						Tap into your audience's needs and create new economic,emotional, and loyalty value
 					</Typography>
-					{/* <Button variant="contained" className="homeBtn"
-						sx={{
-							border: '2px solid var(--primary)',
-							background: 'var(--primary)',
-							width: '10rem',
-							margin: 'auto',
-							marginTop: '2rem'
-						}}>Know more
-					</Button> */}
 				</Grid>
 			</Grid>
-		</div>
+		</div >
 	);
 };
 

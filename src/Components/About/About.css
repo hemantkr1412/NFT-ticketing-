@@ -9,7 +9,6 @@
 /* FAN ENGAGEMENT */
 
 .fanEngagementLeftDiv {
-    /* border: 1px solid; */
     width: 100%;
     display: flex;
     gap: 6rem;
@@ -73,16 +72,17 @@
     text-align: center;
 }
 
-.screenshotContainer{
-    height:28rem;
-    padding:1.5rem;
+.screenshotContainer {
+    height: 28rem;
+    padding: 1.5rem;
     border-radius: 2rem;
     background-color: white;
     box-shadow: 1px 0.2px 12px #afafaf;
 }
-.screenshotContainer img{
-    border:1px solid;
-    height:100%;
+
+.screenshotContainer img {
+    border: 1px solid;
+    height: 100%;
     border-radius: 1.5rem;
 }
 
@@ -118,6 +118,10 @@
 @media only screen and (min-width : 768px) and (max-width : 1200px) {
     .aboutDesc {
         width: 70% !important;
+    }
+
+    .screenshotContainer {
+        height: 22rem;
     }
 }
 

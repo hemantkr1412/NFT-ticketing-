@@ -10,7 +10,8 @@ import ListItem from "@mui/material/ListItem";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import logo from "/logo2.png";
+import logoWhite from "/logo-white.png";
+import logoColored from "/logo-colored.png";
 import "../Navbar/Navbar.css";
 
 const drawerWidth = 240;
@@ -38,9 +39,9 @@ export default function Navbar() {
 			}}
 			id="sidebar">
 			<Typography variant="h6" sx={{ my: 2 }}>
-				<img src={logo} alt=""
+				<img src={logoColored} alt=""
 					style={{
-						height: "2rem",
+						height: "4rem",
 						marginTop: "1.5rem",
 					}}
 				/>
@@ -90,7 +91,7 @@ export default function Navbar() {
 							sx={{
 								mr: 2,
 								display: { sm: "none" },
-								color: scroll ? "white" : "black"
+								color: "white"
 							}}>
 							<MenuIcon />
 						</IconButton>
@@ -99,6 +100,7 @@ export default function Navbar() {
 								width: "100%",
 								display: "flex",
 								alignItems: "center",
+								justifyContent:'space-around'
 							}}>
 							<Typography
 								variant="h6"
@@ -112,7 +114,7 @@ export default function Navbar() {
 								className="navbarTitle">
 								<a href="#home">
 									<img
-										src={logo}
+										src={logoWhite}
 										alt=""
 										style={{
 											height: "2rem",

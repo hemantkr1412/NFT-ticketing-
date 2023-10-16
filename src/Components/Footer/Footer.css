@@ -1,5 +1,5 @@
 .footerDiv {
-    padding: 1rem !important;
+    padding: 2rem 0 !important;
     background: black;
 }
 
@@ -32,11 +32,16 @@
 
     #footerImg {
         margin-left: 0 !important;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
 
     #footerIcons {
         text-align: center !important;
         display: block !important;
+    }
+}
+@media only screen and (min-width : 600px) and (max-width : 900px) {
+    .footerDiv {
+        padding: 1rem 0 3rem 0 !important;
     }
 }

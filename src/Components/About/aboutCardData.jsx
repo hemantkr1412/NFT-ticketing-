@@ -1,13 +1,13 @@
 export const aboutCardData = [
     {
         id: 1,
-        title: "Transparent Resale Market",
-        desc: "Fans can resell tickets at any time at the price they choose (or below the price ceiling if set by the event organiser), creating secondary sales revenue for artists and event organisers through royalty splits."
+        title: "Issue Unique Tickets",
+        desc: "Provide fans with a more secure, transparent, and engaging ticketing experience. With NFTs, you can ensure authenticity, eliminate fraud, and engage fans like never before. Customizable and interactive, NFT tickets offer an elevated fan experience, reducing the risk of scalping."
     },
     {
         id: 2,
-        title: "NFTs With Real Utility",
-        desc: "All tickets and collectables are fully functional, scannable NFTs that allow users to claim whatever IRL items the artist/event organiser chooses to offer! They're tied to usernames and locked to devices to stop ticket touts from operating within our ticketing ecosystem."
+        title: "Transparent Resale Market",
+        desc: "Fans can resell tickets at any time at the price they choose (or below the price ceiling if set by the event organiser), creating secondary sales revenue for artists and event organisers through royalty splits."
     },
     {
         id: 3,

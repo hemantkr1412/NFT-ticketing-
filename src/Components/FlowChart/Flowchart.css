@@ -1,0 +1,12 @@
+.mobileScreen {
+    /* height:28rem; */
+    margin-bottom: 2rem;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width : 768px){
+    .mobileScreen {
+        height:18rem;
+    }
+}

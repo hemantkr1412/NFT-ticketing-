@@ -1,15 +1,10 @@
 import React from "react";
 import AboutCard from "./AboutCard";
+import FanEngagement from "./Engagement/FanEngagement";
+import NewFanEngagement from "./Engagement/NewFanEngagement";
 import Grid from "@mui/material/Grid";
-import Box from '@mui/material/Box';
 import { aboutCardData } from './aboutCardData'
 import Typography from '@mui/material/Typography';
-import image1 from './assets/abc2.png'
-import ss from './assets/ss.webp'
-import ss2 from './assets/ss2.webp'
-import frame from './assets/newframe1.png';
-import frame2 from './assets/NewFrame2.png';
-import frame3 from './assets/NewFrame3.png';
 import "./About.css";
 
 const About = () => {
@@ -17,21 +12,24 @@ const About = () => {
 		<div style={{ padding: "1rem 0 4rem" }}>
 			<div id="about"></div>
 			<div className="aboutDiv">
-				<h1 style={{ width: '50%', textAlign: 'center' }}>Revolutionise your ticketing with NFTs</h1>
+				<h1 style={{ textAlign: 'center' }}>Revolutionise your ticketing with NFTs</h1>
 				<Typography variant="body1" gutterBottom sx={{
 					marginBottom: "3rem",
 					marginTop: "1rem",
+					padding: '0 1rem'
 				}}>
 					By using blockchain technology and NFTs, we are now at the forefront of a new era of event ticketing
 				</Typography>
 				<Grid
 					container
 					spacing={{ xs: 1, sm: 3 }}
-					justifyContent="center">
-					<Grid item xs={2}
-						sx={{ display: { xs: "none", lg: "block" } }}>
+					justifyContent="center"
+					sx={{ marginLeft: 0, padding: '1rem' }}
+				>
+					<Grid item xs={2} md={1}
+						sx={{ display: { xs: "none", md: "block" } }}>
 					</Grid>
-					<Grid item container xs={12} lg={8} spacing={3}
+					<Grid item container xs={12} md={10} lg={8} spacing={3}
 						className="aboutCardContainerDiv">
 						{
 							aboutCardData.map((data, id) => {
@@ -53,171 +51,19 @@ const About = () => {
 							})
 						}
 					</Grid>
-					<Grid item xs={2}
-						sx={{ display: { xs: "none", lg: "block" } }}>
+					<Grid item xs={2} md={1}
+						sx={{ display: { xs: "none", md: "block" } }}>
 					</Grid>
 				</Grid>
 			</div>
 
 			{/* Increase Fan Engagement */}
 
-			<Grid container sx={{
-				height: '50rem',
-				marginTop: '4rem',
-				backgroundColor: '#3E6C90', p: 2
-			}}>
-				<Grid item xs={7} sx={{
-					background: 'white',
-					borderTopLeftRadius: '1rem',
-					borderBottomLeftRadius: '1rem'
-				}}>
-					<Typography variant="h3" gutterBottom sx={{
-						textAlign: 'center',
-						fontWeight: 'bold',
-						marginBottom: "10rem",
-						marginTop: "1rem",
-						color: '#3E6C90'
-					}}>
-						Increase
-						Fan Engagement
-					</Typography>
-					<div className="fanEngagementLeftDiv">
-						<div className="fanEngagementBoxes" style={{ marginTop: '2rem' }}>
-							<div className="fanEngagementIconBoxes box1">
-								<img src={image1} alt="" />
-							</div>
-							<p className="fanEngagementBoxTitle">Memorabilia</p>
-							<p style={{ textAlign: 'center' }}>Keep memories of the events
-								you attended with digital ticket
-								stubs.</p>
-						</div>
-						<div className="fanEngagementBoxes">
-							<div className="fanEngagementIconBoxes box2">
-								<img src={image1} alt="" />
-							</div>
-							<p className="fanEngagementBoxTitle">Proof of Attendance</p>
-							<p style={{ textAlign: 'center' }}>Collect fan loyalty and unlock
-								additional benefits with your
-								achievements.</p>
-						</div>
-					</div>
-					<div className="fanEngagementLeftDiv" style={{
-						justifyContent: 'flex-end',
-						gap: '3rem',
-					}}>
-						<div className="fanEngagementBoxes" style={{ marginTop: '2rem' }}>
-							<div className="fanEngagementIconBoxes box3">
-								<img src={image1} alt="" />
-							</div>
-							<p className="fanEngagementBoxTitle">Unique Asset</p>
-							<p style={{ textAlign: 'center' }}>Collect and trade valuable NFT
-								artwork, epic moments, and
-								fan media.</p>
-						</div>
-						<div className="fanEngagementBoxes" style={{ marginRight: '5rem' }}>
-							<div className="fanEngagementIconBoxes box4">
-								<img src={image1} alt="" />
-							</div>
-							<p className="fanEngagementBoxTitle">Fan Achievements</p>
-							<p style={{ textAlign: 'center' }}>Share your personal fan
-								achievements on (social
-								media) profile pictures.</p>
-						</div>
-					</div>
-				</Grid>
-				<Grid item xs={5} sx={{
-					display: 'flex',
-					justifyContent: 'center',
-					alignItems: 'center',
-					gap: '1rem'
-				}}>
-					<div className="screenshotContainer" style={{ marginTop: '5rem' }}>
-						<img src={ss} alt="" style={{
-						}} />
-					</div>
-					<div className="screenshotContainer">
-						<img src={ss2} alt="" style={{
-						}} />
-					</div>
-				</Grid>
-			</Grid>
+			<FanEngagement/>
 
 			{/* Unleashing new fan Engagement */}
 
-			<Typography variant="h4" gutterBottom sx={{
-				textAlign: 'center',
-				fontWeight: 'bold',
-				marginBottom: "3rem",
-				marginTop: "5rem",
-				color: '#3E6C90'
-			}}>
-				Unleasing new fan engagement and gamification possibilities
-			</Typography>
-
-			<Grid
-				container
-				// spacing={{ xs: 1, sm: 3 }}
-				sx={{
-					display: "flex",
-					alignItems: 'center',
-					justifyContent: "space-evenly",
-					// textTransform:'capitalize'
-					color: '#3E6C90'
-				}}
-				justifyContent="center">
-				<Grid item sx={{
-					// border: '2px solid red',
-					textAlign: "center"
-				}}>
-					
-					<img src={frame} alt="" style={{
-						// border: '1px solid',
-						height: '35rem',
-						marginBottom: '2rem'
-					}} />
-					
-					
-					<Typography variant="body1" gutterBottom sx={{ fontWeight: 'bold' }}>
-						ECONOMIC VALUE
-					</Typography>
-					<Typography variant="body1" gutterBottom>
-						NFT COLLECTIBLES
-					</Typography>
-				</Grid>
-				<Grid item sx={{
-					// border: '2px solid red',
-					textAlign: "center"
-				}}>
-					<img src={frame2} alt="" style={{
-						// border: '1px solid',
-						height: '35rem',
-						marginBottom: '2rem'
-					}} />
-					<Typography variant="body1" gutterBottom sx={{ fontWeight: 'bold' }}>
-						EMOTIONAL VALUE
-					</Typography>
-					<Typography variant="body1" gutterBottom>
-						MEMORABILIA TICKETS
-					</Typography>
-				</Grid>
-				<Grid item sx={{
-					// border: '2px solid red',
-					textAlign: "center"
-				}}>
-					<img src={frame3} alt="" style={{
-						// border: '1px solid',
-						height: '35rem',
-						marginBottom: '2rem'
-					}} />
-					<Typography variant="body1" gutterBottom sx={{ fontWeight: 'bold' }}>
-						LOYALTY VALUE
-					</Typography>
-					<Typography variant="body1" gutterBottom>
-						PERSONAL FAN ACHIEVEMENTS
-					</Typography>
-				</Grid>
-			</Grid>
-
+			<NewFanEngagement />
 		</div >
 	);
 };
