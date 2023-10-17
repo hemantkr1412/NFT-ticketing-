@@ -30,7 +30,6 @@
   width: 100%;
   text-align: center;
   backface-visibility: hidden;
-  overflow: scroll;
 }
 
 .imgDiv {
@@ -56,6 +55,11 @@
   overflow: scroll;
 }
 
+.flip-card-back::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
 /* MEDIA QUERY */
 
 @media only screen and (max-width : 900px) {
@@ -67,8 +71,15 @@
     height: 20rem;
   }
 }
+
 @media only screen and (max-width : 400px) {
   .solutionCardsDiv {
     height: 17rem;
+  }
+
+  .flip-card-back {
+    padding: 2px;
+    padding-top: 1rem;
+    justify-content: flex-start;
   }
 }

@@ -1,4 +1,162 @@
-.mobileScreen{
-    height:28rem;
+.fanEngagementContainer {
+    height: 50rem;
+    margin-top: 4rem;
+    background-color: #3E6C90;
+}
+
+.fanEngagementLeftContainer {
+    background: white;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.fanEngagementLeftDiv {
+    width: 100%;
+    display: flex;
+    gap: 6rem;
+    margin-top: 2rem;
+    padding: 0 2rem;
+}
+
+.fanEngagementBoxes {
+    border: 1px solid #d4d4d4;
+    width: 30%;
+    position: relative;
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.fanEngagementIconBoxes {
+    width: 50%;
+    position: absolute;
+    transform: translate(50%);
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 6px;
+}
+
+.box1 {
+    transform: rotate(-15deg);
+    top: -35%;
+    left: 22%;
+}
+
+.box2 {
+    transform: rotate(-25deg);
+    top: -31%;
+    left: 21%;
+}
+
+.box3 {
+    transform: rotate(10deg);
+    top: -35%;
+    left: 26%;
+}
+
+.box4 {
+    top: -28%;
+    left: 0%;
+}
+
+.fanEngagementIconBoxes img {
+    height: 100%;
+    width: 100%;
+    background: #e8e8e8;
+    border: 1px solid grey;
+    border-radius: 4px
+}
+
+.fanEngagementBoxTitle {
+    font-weight: bold;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.screenshotContainer {
+    height: 28rem;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    background-color: white;
+    box-shadow: 1px 0.2px 12px #afafaf;
+}
+
+.screenshotContainer img {
+    border: 1px solid;
+    height: 100%;
+    width: 100%;
+    border-radius: 1.5rem;
+}
+
+
+.mobileScreen {
+    height: 28rem;
     margin-bottom: 2rem;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width : 1200px) {
+    .fanEngagementContainer {
+        height: max-content;
+        padding: 0 !important;
+    }
+
+    .screenshotContainer {
+        height: 75%;
+    }
+
+    .fanEngagementLeftDiv {
+        justify-content: center !important;
+        gap: 1rem !important;
+    }
+
+    .fanEngagementLeftContainer {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        padding-bottom: 2rem;
+    }
+
+    .fanEngagementIconBoxes {
+        display: none;
+    }
+
+    .fanEngagementBoxes {
+        width: unset;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 8px;
+    }
+
+    .fanEngagementBoxTitle {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .lastBox {
+        margin-right: 0 !important;
+    }
+}
+
+@media only screen and (max-width : 900px) {
+    .screenshotOuterContainer {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width : 450px) {
+    .fanEngagementIconBoxes {
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1200px) {
+    .aboutDesc {
+        width: 70% !important;
+    }
+
+    .screenshotContainer {
+        height: 22rem;
+    }
 }

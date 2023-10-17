@@ -7,23 +7,15 @@ import ss2 from '../assets/ss2.webp'
 
 const FanEngagement = () => {
     return (
-        <Grid container sx={{
-            height: '50rem',
-            marginTop: '4rem',
-            backgroundColor: '#3E6C90', p: 2
-        }}>
-            <Grid item xs={12} md={6} lg={7} sx={{
-                background: 'white',
-                borderTopLeftRadius: '1rem',
-                borderBottomLeftRadius: '1rem'
-            }}>
+        <Grid container sx={{ p: 2 }} className="fanEngagementContainer">
+            <Grid item xs={12} md={6} lg={7} className="fanEngagementLeftContainer">
                 <Typography variant="h3" gutterBottom sx={{
                     textAlign: 'center',
                     fontWeight: 'bold',
-                    marginBottom: "10rem",
+                    marginBottom: {xs:0,md:'10rem'},
                     marginTop: "1rem",
                     color: '#3E6C90'
-                }}>
+                }} className="fanEngagementHead">
                     Increase
                     Fan Engagement
                 </Typography>
@@ -60,7 +52,7 @@ const FanEngagement = () => {
                             artwork, epic moments, and
                             fan media.</p>
                     </div>
-                    <div className="fanEngagementBoxes" style={{ marginRight: '5rem' }}>
+                    <div className="fanEngagementBoxes lastBox" style={{ marginRight: '5rem' }}>
                         <div className="fanEngagementIconBoxes box4">
                             <img src={image1} alt="" />
                         </div>
@@ -76,15 +68,13 @@ const FanEngagement = () => {
                 justifyContent: 'center',
                 alignItems: 'center',
                 gap: '1rem'
-            }}>
-                <div className="screenshotContainer" style={{ marginTop: '5rem' }}>
-                    <img src={ss} alt="" style={{
-                    }} />
-                </div>
-                <div className="screenshotContainer">
-                    <img src={ss2} alt="" style={{
-                    }} />
-                </div>
+            }} className="screenshotOuterContainer">
+                <Grid item xs={3} md={5} className="screenshotContainer" style={{ marginTop: '5rem' }}>
+                    <img src={ss} alt="" />
+                </Grid>
+                <Grid item xs={3} md={5} className="screenshotContainer">
+                    <img src={ss2} alt="" />
+                </Grid>
             </Grid>
         </Grid>
     )

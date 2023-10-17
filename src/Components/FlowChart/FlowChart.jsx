@@ -26,7 +26,7 @@ const FlowChart = () => {
 					flowchartData.map((elem, ind) => {
 						return (
 							<>
-								<Grid item xs={5} sm={4} md={3} lg={2} sx={{
+								<Grid item xs={5} sm={4} md={3} lg={2} key={ind} sx={{
 									textAlign: "center",
 									marginBottom: '2rem'
 								}}>

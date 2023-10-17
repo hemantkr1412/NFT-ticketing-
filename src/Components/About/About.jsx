@@ -35,7 +35,7 @@ const About = () => {
 							aboutCardData.map((data, id) => {
 								return (
 									<>
-										<Grid item xs={10} sm={4} spacing={3}
+										<Grid item xs={10} sm={4}
 											key={id}
 											className="cardsDiv">
 											<AboutCard
@@ -59,7 +59,7 @@ const About = () => {
 
 			{/* Increase Fan Engagement */}
 
-			<FanEngagement/>
+			<FanEngagement />
 
 			{/* Unleashing new fan Engagement */}
 
